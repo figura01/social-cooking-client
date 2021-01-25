@@ -33,7 +33,12 @@ class FormSignin extends Component {
       .signin(this.state)
       .then((data) => {
         this.context.setUser(data);
-        this.props.history.push("/");
+        if(this.context.user.role === 'admin') {
+          this.props.history.push("/admin");
+        } else {
+          this.props.history.push("/");
+        }
+        
       })
       .catch((error) => {
         console.log(error);

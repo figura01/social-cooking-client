@@ -1,0 +1,12 @@
+.form-create-recipe {
+  padding: .5rem 1.2rem;
+}
+
+.form-create-recipe .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-create-recipe .form-input {
+  width: 100%;
+}

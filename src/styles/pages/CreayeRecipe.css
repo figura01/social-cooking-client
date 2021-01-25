@@ -1,0 +1,17 @@
+.create-recipe {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.create-recipe .page-title {
+  background-color: var(--color-red);
+  color: white;
+  border-radius: 4px 4px 0 0;
+}
+
+@media screen and (min-width:567px){
+  .create-recipe {
+    width: 40rem;
+    margin: 0 auto;
+  }
+}

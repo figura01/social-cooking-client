@@ -1,0 +1,70 @@
+@import './vars.css';
+
+.form {
+  background: #fff;
+  border-radius: .3rem;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 1rem;
+  border:0;
+
+}
+
+.form-input {
+  border: 0;
+  outline:0;
+  padding: 10px 22px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} 
+
+.form-title {
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+}
+
+.form-group .custom-upload {
+  border: 1px solid #5663ff;
+  color: #5663ff;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px 22px;
+  cursor: pointer;
+}
+
+.form-action {
+  padding: 0 1rem 1rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+p.form-label {
+  margin:0;
+  padding: 0;
+}
+
+.form .form-signin,
+.form .form-signup {
+  max-width: 25rem;
+}
+
+.msg-errors {
+  color: var(--color-red);
+}
+
+.form-create .input-image {
+  display:none;
+}
+
+.form-title {
+  padding-bottom: 4px;
+}
+

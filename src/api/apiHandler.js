@@ -8,6 +8,8 @@ const service = axios.create({
 function errorHandler(error) {
   if (error.response.data) {
     console.log(error.response && error.response.data);
+    console.log(error.response)
+    return error.response
     throw error;
   }
   throw error;
@@ -24,6 +26,7 @@ export default {
   },
 
   signin(userInfo) {
+    console.log('signin api handler')
     return service
       .post("/api/auth/signin", userInfo)
       .then((res) => res.data)
@@ -50,4 +53,45 @@ export default {
       .then((res) => res.data)
       .catch(errorHandler);
   },
+
+  getAll(endPoint) {
+    return service
+      .get(endPoint)
+      .then((res) => res.data)
+      .catch(errorHandler);
+  },
+
+  createOne(endPoint, data) {
+    console.log('apihandler', data)
+    return service
+      .post(endPoint, data)
+      .then((res) => res.data)
+      .catch(errorHandler);
+  },
+
+  getOne(endPoint) {
+    return service
+      .get(endPoint)
+      .then((res) => res.data)
+      .catch(errorHandler)
+  },
+
+  updateOne(endPoint, data) {
+    console.log('api handler');
+    console.log(endPoint);
+    console.log(data);
+    return service
+      .patch(endPoint, data)
+      .then((res) => res.data)
+      .catch(errorHandler)
+  },
+
+  deleteOne(endPoint) {
+    
+    return service
+      .delete(endPoint)
+      .then((res) => res.data)
+      .catch(errorHandler)
+  },
+
 };

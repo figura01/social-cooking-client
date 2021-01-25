@@ -1,0 +1,12 @@
+.form-title {
+  background-color: var(--color-red);
+  color:white;
+  padding: 1rem;
+}
+.current-avatar {
+  width: 5rem;
+  height: auto;
+}
+.input-image {
+  display: none;
+}

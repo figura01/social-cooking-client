@@ -1,0 +1,27 @@
+@import './vars.css';
+
+.users-details {
+  
+  border-radius: 4px;
+}
+
+.page-title {
+  text-align: center;
+  border-bottom: 1px solid #ccc;padding: 12px 0;
+}
+
+.title-section {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.line {
+  display:flex;
+  flex-direction: row;
+  justify-content: flax-start;
+  align-items: center;
+}
+
+.label {
+  font-weight: 700;
+}

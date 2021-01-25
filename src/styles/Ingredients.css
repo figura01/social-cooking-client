@@ -1,0 +1,19 @@
+.ingredient {
+  display: flex;
+}
+
+.btn-create {
+  background-color: transparent;
+}
+
+.btn-create:hover i {
+  color: rgba(86, 185, 45, .8);
+}
+
+.btn-create i {
+  color: rgba(86, 185, 45,1);
+}
+
+.btn-create.disbled i {
+  color: #ccc;
+}
